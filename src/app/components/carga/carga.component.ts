@@ -9,6 +9,7 @@ import { UploadFilesService } from '../../services/upload-files.service';
 })
 export class CargaComponent implements OnInit {
 
+  drop = false;
   archivos: FileItem[] = [];
   constructor(
     public service: UploadFilesService
