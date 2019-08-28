@@ -45,7 +45,6 @@ export class NgDropFilesDirective {
         this.archivos.push(nuevo);
       }
     }
-    console.log(this.archivos);
   }
 
   // Validaciones
@@ -57,7 +56,6 @@ export class NgDropFilesDirective {
   private verficarArchivo(nombre: string): boolean {
     for ( const archivo of this.archivos ) {
       if (archivo.nombreArchivo === nombre) {
-        console.log(`El archivo ${nombre} ya existe!`);
         return false;
       }
     }
@@ -69,7 +67,6 @@ export class NgDropFilesDirective {
   }
 
   private verficarDrop(archivo: File): boolean {
-    console.log(archivo);
     if (this.verficarArchivo(archivo.name) && this.veficarTipo(archivo.type)) {
       return true;
     } else {
