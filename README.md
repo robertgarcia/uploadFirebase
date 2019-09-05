@@ -1,27 +1,18 @@
 # UploadFire
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+Aplicación desarrollada en el [curso de udemy](https://www.udemy.com/angular-2-fernando-herrera/learn/)
 
-## Development server
+## Configurar Firebase
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Registrarse en Firebase y crear un proyecto.
+- Creamos una nueva base de datos en modo de prueba.
+- Las reglas de la base de datos deben estar todas en TRUE para este ejemplo.
 
-## Code scaffolding
+## Configurar Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Se usara para la conexion a Firebase [angularFire2](https://github.com/angular/angularfire2).
+- Agregar las credenciales solitadas en el archivo de environment.ts.
 
-## Build
+## Instalar dependencias 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Solo deben ejecutar el comando `npm install` en su terminal.
